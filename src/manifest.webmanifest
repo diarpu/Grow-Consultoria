@@ -38,7 +38,8 @@
     {
       "src": "./assets/images/favicons/grow-144.png",
       "sizes": "144x144",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "./assets/images/favicons/grow-192.png",
