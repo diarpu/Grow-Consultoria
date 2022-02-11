@@ -1,35 +1,11 @@
-// import {manifest, version} from '@parcel/service-worker';
-
-// async function install() {
-//   const cache = await caches.open(version);
-//   await cache.addAll(manifest);
-// }
-// addEventListener('install', e => e.waitUntil(install()));
-
-// async function activate() {
-//   const keys = await caches.keys();
-//   await Promise.all(
-//     keys.map(key => key !== version && caches.delete(key))
-//   );
-// }
-// addEventListener('activate', e => e.waitUntil(activate()));
-
-
-//Asignar un nombre y versión al cache
-const CACHE_NAME = 'grow_cache_v1',
-  urlsToCache = [
-    './',
-    'https://fonts.googleapis.com/css2?family=Inter:wght@400;800;900&display=swap',
-    './assets/images/favicons/favicon.png',
-    './assets/images/grow-logo.png',
-  ]
+import {manifest, version} from '@parcel/service-worker';
 
 //Durante la fase de instalación, generalmente se almacena en caché los activos estáticos
 self.addEventListener('install', e => {
   e.waitUntil(
-    caches.open(CACHE_NAME)
+    caches.open(version)
       .then(cache => {
-        return cache.addAll(urlsToCache)
+        return cache.addAll(manifest)
           .then(() => self.skipWaiting())
       })
       .catch(err => console.log('Falló registro de cache', err))
@@ -38,7 +14,7 @@ self.addEventListener('install', e => {
 
 //Una vez que se instala el SW, se activa y busca los recursos para hacer que funcione sin conexión
 self.addEventListener('activate', e => {
-  const cacheWhitelist = [CACHE_NAME]
+  const cacheWhitelist = [version]
 
   e.waitUntil(
     caches.keys()
