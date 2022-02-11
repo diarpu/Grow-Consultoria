@@ -1,6 +1,7 @@
 .parcel-cache
 node_modules
 
-public
 dist
 src/assets/php/
+public
+public/assets/php/
