@@ -38,6 +38,10 @@
     {
       "origin": "src/assets/php/",
       "destination": "dist/assets/php/"
+    },
+    {
+      "origin": "src/assets/screenshots/grow_v1.jpeg",
+      "destination": "dist/assets/screenshots/grow_v1.jpeg"
     }
   ],
   "keywords": [],
