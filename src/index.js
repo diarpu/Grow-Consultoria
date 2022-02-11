@@ -20,7 +20,11 @@ window.addEventListener('scroll', () => {
 import './assets/js/smoth-scroll.js';
 
 import lozad from 'lozad'
-const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+const observer = lozad('.lozad', {
+    rootMargin: '40px 0px', // syntax similar to that of CSS Margin
+    threshold: 0.1, // ratio of element convergence
+    enableAutoReload: true // it will reload the new image when validating attributes changes
+});
 observer.observe();
 
 import './assets/js/form_process.js';
