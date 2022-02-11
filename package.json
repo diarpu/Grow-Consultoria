@@ -19,14 +19,12 @@
   },
   "scripts": {
     "dev": "run-s dev:parcel",
-    "dev:parcel": "parcel src/index.html",
+    "dev:parcel": "parcel src/*.html",
     "dev:surge": "surge ./dist groww.surge.sh",
-    "build": "run-s clear:build build:parcel",
-    "build:parcel": "parcel build ./src/*.html --dist-dir ./public/ --no-source-maps --no-content-hash",
-    "build:surge": "run-s clear:build build:parcel surge:build clear:build",
+    "build": "run-s clear:dev build:parcel",
+    "build:parcel": "parcel build ./src/*.html --dist-dir --no-source-maps --no-content-hash",
+    "build:surge": "run-s clear:dev build:parcel surge:build clear:dev",
     "surge:build": "surge ./public groww.surge.sh",
-    "surge:dev": "surge ./dist groww.surge.sh",
-    "clear:build": "rimraf ./public",
     "clear:dev": "rimraf ./dist"
   },
   "multipleStaticFileCopier": [
@@ -40,7 +38,7 @@
     }
   ],
   "keywords": [],
-  "author": "",
+  "author": "Diego Paz <https://gredich.com>",
   "license": "ISC",
   "description": ""
 }
