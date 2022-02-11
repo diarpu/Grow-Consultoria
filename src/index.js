@@ -18,4 +18,9 @@ window.addEventListener('scroll', () => {
 })
 
 import './assets/js/smoth-scroll.js';
+
+import lozad from 'lozad'
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
+
 import './assets/js/form_process.js';

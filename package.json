@@ -17,7 +17,8 @@
     "tailwindcss": "3.0.12"
   },
   "dependencies": {
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "lozad": "^1.16.0"
   },
   "scripts": {
     "dev": "run-s dev:parcel",
@@ -44,6 +45,10 @@
     {
       "origin": "src/assets/screenshots/grow_v1.jpeg",
       "destination": "dist/assets/screenshots/grow_v1.jpeg"
+    },
+    {
+      "origin": "src/assets/images/soluciones/",
+      "destination": "dist/assets/images/soluciones/"
     }
   ],
   "keywords": [],
