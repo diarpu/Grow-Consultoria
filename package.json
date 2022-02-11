@@ -26,9 +26,9 @@
     "build": "run-s clear:build build:parcel",
     "build:parcel": "parcel build ./src/*.html --dist-dir ./dist/ --no-source-maps --no-content-hash",
     "build:surge": "run-s clear:build build:parcel surge:build clear:build",
-    "surge:build": "surge ./public groww.surge.sh",
+    "surge:build": "surge ./dist groww.surge.sh",
     "surge:dev": "surge ./dist groww.surge.sh",
-    "clear:build": "rimraf ./public",
+    "clear:build": "rimraf ./dist",
     "clear:dev": "rimraf ./dist",
     "surge:teardown": "surge teardown groww.surge.sh"
   },

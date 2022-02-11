@@ -3,5 +3,8 @@ node_modules
 
 dist
 src/assets/php/submit.php
+src/assets/php/PHPMailer.php
+src/assets/php/SMTP.php
+
 public
 public/assets/php/
