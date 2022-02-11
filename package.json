@@ -24,13 +24,14 @@
     "dev": "run-s dev:parcel",
     "dev:parcel": "parcel src/index.html",
     "dev:surge": "surge ./dist groww.surge.sh",
-    "build": "run-s clear:build build:parcel",
+    "build": "run-s clear:build clear:cache build:parcel",
     "build:parcel": "parcel build ./src/*.html --dist-dir ./dist/ --no-source-maps",
     "build:surge": "run-s clear:build build:parcel surge:build clear:build",
     "surge:build": "surge ./dist groww.surge.sh",
     "surge:dev": "surge ./dist groww.surge.sh",
     "clear:build": "rimraf ./dist",
     "clear:dev": "rimraf ./dist",
+    "clear:cache": "rimraf .parcel-cache",
     "surge:teardown": "surge teardown groww.surge.sh"
   },
   "multipleStaticFileCopier": [
