@@ -4,7 +4,7 @@
         "*.ico": ["@parcel/transformer-raw"],
         "*.woff": ["@parcel/transformer-raw"],
         "*.woff2": ["@parcel/transformer-raw"],
-        "*.json": ["@parcel/transformer-webmanifest"]
+        "*.webmanifest": ["@parcel/transformer-webmanifest"]
     },
     "namers": ["@mischnic/parcel-namer-preserve-structure"],
     "optimizers": {
