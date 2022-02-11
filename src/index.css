@@ -50,12 +50,6 @@
 /* @import './components/header/header.css'; */
 
 @layer components{
-    .h1gradient{
-        background: -webkit-linear-gradient(#00b064, #559077);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
     .planes{
         @apply py-12 grid grid-cols-4 gap-y-6 items-center md:grid-cols-6 md:gap-x-8 lg:gap-x-16 border-b-2 border-solid border-primary-700;
     }

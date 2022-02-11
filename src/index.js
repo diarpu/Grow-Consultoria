@@ -18,4 +18,4 @@ window.addEventListener('scroll', () => {
 })
 
 import './assets/js/smoth-scroll.js';
-import './assets/php/form_process.js';
+import './assets/js/form_process.js';
