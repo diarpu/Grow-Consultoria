@@ -1,6 +1,8 @@
 <h1 align="center">GROW Consultoría de Negocios</h1>
 <p align="center">
     <a href="https://consultoriadenegocios.gruva.net">consultoriadenegocios.gruva.net</a>
+</p>
+<p align="center">
     <a href="https://consultoriadenegocios.vercel.app">consultoriadenegocios.vercel.app</a>
 </p>
 
