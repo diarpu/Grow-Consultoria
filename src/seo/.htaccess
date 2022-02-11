@@ -77,7 +77,7 @@ BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 
 <IfModule mod_headers.c>
     # WEEK
-    <FilesMatch "\.(jpg|jpeg|png|gif|webp|swf)$">
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|swf|mp4)$">
         Header set Cache-Control "max-age=1804800, public"
     </FilesMatch>
 
