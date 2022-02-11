@@ -15,7 +15,7 @@
 // addEventListener('activate', e => e.waitUntil(activate()));
 
 
-//asignar un nombre y versión al cache
+//Asignar un nombre y versión al cache
 const CACHE_NAME = 'grow_cache_v1',
   urlsToCache = [
     './',
@@ -24,7 +24,7 @@ const CACHE_NAME = 'grow_cache_v1',
     './assets/images/grow-logo.png',
   ]
 
-//durante la fase de instalación, generalmente se almacena en caché los activos estáticos
+//Durante la fase de instalación, generalmente se almacena en caché los activos estáticos
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(CACHE_NAME)
@@ -36,7 +36,7 @@ self.addEventListener('install', e => {
   )
 })
 
-//una vez que se instala el SW, se activa y busca los recursos para hacer que funcione sin conexión
+//Una vez que se instala el SW, se activa y busca los recursos para hacer que funcione sin conexión
 self.addEventListener('activate', e => {
   const cacheWhitelist = [CACHE_NAME]
 
@@ -57,7 +57,7 @@ self.addEventListener('activate', e => {
   )
 })
 
-//cuando el navegador recupera una url
+//Cuando el navegador recupera una url
 self.addEventListener('fetch', e => {
   //Responder ya sea con el objeto en caché o continuar y buscar la url real
   e.respondWith(
