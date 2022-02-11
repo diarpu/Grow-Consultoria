@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://consultoriadenegocios.gruva.net/sitemap.xml
