@@ -22,7 +22,7 @@
     "dev:parcel": "parcel src/index.html",
     "dev:surge": "surge ./dist groww.surge.sh",
     "build": "run-s clear:build build:parcel",
-    "build:parcel": "parcel build ./src/*.html --dist-dir ./dist/ --no-source-maps --no-content-hash",
+    "build:parcel": "parcel build ./src/*.html --dist-dir dist --no-source-maps --no-content-hash",
     "build:surge": "run-s clear:build build:parcel surge:build clear:build",
     "surge:build": "surge ./public groww.surge.sh",
     "surge:dev": "surge ./dist groww.surge.sh",
