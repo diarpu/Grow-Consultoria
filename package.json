@@ -7,6 +7,7 @@
     "@parcel/optimizer-esbuild": "2.3.1",
     "@parcel/packager-raw-url": "2.3.1",
     "@parcel/service-worker": "2.3.1",
+    "@parcel/transformer-webmanifest": "2.3.1",
     "autoprefixer": "10.4.2",
     "parcel-optimizer-ogimage": "0.1.0",
     "parcel-reporter-multiple-static-file-copier": "1.0.5",
