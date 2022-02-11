@@ -10,5 +10,12 @@
     "optimizers": {
         "*.html": ["parcel-optimizer-ogimage", "..."]
     },
+    "compressors": {
+        "*.{html,css,js,svg,map}": [
+            "...",
+            "@parcel/compressor-gzip",
+            "@parcel/compressor-brotli"
+        ]
+    },
     "reporters": ["...", "parcel-reporter-multiple-static-file-copier"]
 }
