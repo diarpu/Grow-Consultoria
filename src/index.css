@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .container-xl {
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    @media screen(sm) {
+        .container {
+            max-width: 540px;
+        }
+    }
+
+    @media screen(md) {
+        .container {
+            max-width: 720px;
+        }
+    }
+    
+    @media screen(lg) {
+        .container {
+            max-width: 960px;
+        }
+    }
+    
+    @media screen(xl) {
+    
+        .container,
+        .container-xl {
+            max-width: 1140px;
+        }
+    }
+    
+    @media screen(2xl) {
+    
+        .container,
+        .container-xl {
+            max-width: 1320px;
+        }
+    }
+}
+
+
+/* @import './components/header/header.css'; */
+
+@layer components{
+    .h1gradient{
+        background: -webkit-linear-gradient(#00b064, #559077);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .planes{
+        @apply py-12 grid grid-cols-4 gap-y-6 items-center md:grid-cols-6 md:gap-x-8 lg:gap-x-16 border-b-2 border-solid border-primary-700;
+    }
+
+    .input__style{
+        @apply px-4 py-2 text-base tracking-wider text-black placeholder:text-black  placeholder:font-medium bg-white border-b-2 border-primary-1000 focus:border-primary-900 focus:outline-none focus:shadow-md;
+    }
+}
+
+/* @import './assets/css/ct.css'; */

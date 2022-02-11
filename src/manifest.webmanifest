@@ -1,0 +1,64 @@
+{
+  "name": "GROW",
+  "short_name": "GROW",
+  "description": "Suma un aliado en la mejora de la productividad de tu organización. Nuestro equipo multidisciplinario te ayudará a identificar las mejores oportunidades de crecimiento para tu negocio.",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "display": "standalone",
+  "start_url": "./?utm_source=pwa",
+  "orientation": "portrait",
+  "id": "/",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "./assets/images/favicons/grow-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/images/favicons/grow-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/images/favicons/grow-57.png",
+      "sizes": "58x58",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/images/favicons/grow-72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/images/favicons/grow-114.png",
+      "sizes": "114x114",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/images/favicons/grow-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/images/favicons/grow-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/images/favicons/grow-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/images/favicons/grow-384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/images/favicons/grow-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
